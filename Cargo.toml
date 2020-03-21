@@ -1,0 +1,18 @@
+[package]
+name = "actask"
+version = "0.1.0"
+authors = ["Sergio Medina <lumasepa@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+async-trait = "0.1.22"
+async-std = { version = "1.4.0", features = ["default", "unstable"] }
+thiserror = "1.0.11"
+futures = "0.3.0"
+tokio = { version = "0.2", features = ["full"] }
+tracing = "0.1.12"
+tracing-futures = "0.2.1"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
