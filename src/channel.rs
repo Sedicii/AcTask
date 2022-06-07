@@ -2,7 +2,7 @@ use async_trait::async_trait;
 use futures::StreamExt;
 use tokio::net::{TcpListener, TcpStream};
 
-pub use async_std::sync::{channel as mpmc_channel, Receiver as MPMCReceiver, Sender as MPMCSender};
+pub use async_channel::{bounded as mpmc_channel, Receiver as MPMCReceiver, Sender as MPMCSender};
 pub use futures::channel::mpsc::{channel as mpsc_channel, Receiver as MPSCReceiver, Sender as MPSCSender};
 pub use futures::channel::oneshot::{
     channel as one_shot_channel, Receiver as OneShotReceiver, Sender as OneShotSender,
